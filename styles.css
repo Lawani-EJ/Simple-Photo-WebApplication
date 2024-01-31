@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left p {
+    margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right li {
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: black;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+.centered-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.latest-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-rectangular-image {
+    margin-right: 20px;
+}
+
+.left-rectangular-image img {
+    margin-bottom: 200px;
+    margin-top: 50px;
+    max-width: 980px;
+    max-height: 400px;
+}
+
+.right-content {
+    flex-grow: 1;
+}
+
+.small-box-images {
+    margin: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.small-box-images img {
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+}
+
+.col3 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    margin-right: 20px;
+    margin-left: 280px;
+}
+
+.col3 img {
+    margin-left: 10px;
+    width: 90%;
+    height: 95%;
+}
+
+.fourcol {
+    margin-top: -100px;
+}
+
+.fourcol p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.col4img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.col4img img {
+    width: 31.7%;
+}
