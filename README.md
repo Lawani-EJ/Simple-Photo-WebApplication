@@ -15,7 +15,7 @@ A basic web application for showcasing photos and artworks.
 This project is a simple web application designed to showcase photos and artworks. It includes sections for the latest gallery images and highlights the best work.
 
 ## Screenshots
-![Alt te](image.png)
+![Alt text](image.png)
 
 ## Features
 
