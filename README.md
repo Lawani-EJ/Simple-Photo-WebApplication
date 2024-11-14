@@ -1,33 +1,50 @@
-# Simple Photo Web Application
+# React + TypeScript + Vite
 
-A basic web application for showcasing photos and artworks.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Table of Contents
+Currently, two official plugins are available:
 
-- [Introduction](#introduction)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Installation](#installation)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
 
-## Introduction
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-This project is a simple web application designed to showcase photos and artworks. It includes sections for the latest gallery images and highlights the best work.
+- Configure the top-level `parserOptions` property like this:
 
-## Screenshots
-![Alt text](image.png)
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-## Features
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-- Responsive design
-- Gallery section with the latest images
-- Showcase of the best work in a four-column layout
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Lawani-EJ/Simple-Photo-WebApplication.git
-
-Feel free to customize this template based on your project's specific details. Once you've made the changes, you can copy and paste this into your repository's README file on GitHub. If you have specific information or details you'd like to include, let me know!
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
