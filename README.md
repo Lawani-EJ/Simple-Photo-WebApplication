@@ -59,8 +59,9 @@ The **Simple Photo WebApplication** is a React-based app that allows users to fi
 ## 🎥 Video and 📸 Screenshot  
 - **🎥 Video Demo**:  
   ![Video Demo of Simple Photo WebApplication](./src/assets/screen_record.gif)  
-- **📸 Screenshot**:  
-  ![Screenshot of Simple Photo WebApplication](./src/assets/Screenshot%20(163).png)  
+- **📸 Screenshot**:
+- ![image](https://github.com/user-attachments/assets/52c08211-5db6-4cda-9ad8-d67286bd3629)
+
 
 ## 🙏 Thank You  
 Thank you so much for checking out this project! 💖 If you found it helpful, please consider giving it a ⭐ on GitHub. Your support means the world! Feel free to reach out with feedback, suggestions, or ideas. 🚀  
